@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>The Amazing Minecraft Server Name Generator</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1 id="server-name">Loading...</h1>
+    <button id="lulz">Give me another!</button>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    var update = function() {
+        $.get('/generate', function(data) {
+            $("#server-name").html(data);
+        });
+    };
+
+    $(document).ready(update);
+    $('#lulz').on('click', update);
+</script>
+</body>
+</html>
