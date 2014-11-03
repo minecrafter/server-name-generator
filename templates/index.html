@@ -9,10 +9,14 @@
     <h1 id="server-name">Loading...</h1>
     <button id="lulz">Give me another!</button>
 </div>
+<footer>
+<hr>
+<p>Try these other fine collections: <a href="/generic-english">Generic (English)</a>, <a href="/latin-derived">Latin-derived</a>
+</footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
     var update = function() {
-        $.get('/generate', function(data) {
+        $.get('/generate/{{ type }}', function(data) {
             $("#server-name").html(data);
         });
     };
