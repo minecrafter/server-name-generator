@@ -16,7 +16,7 @@ for list in os.listdir('lists'):
 
 suffix = ['MC', ' Cloud', 'Cloud', ' Network', 'Network', 'PVP', ' PVP', 'Craft', 'Block', 'Mine', 'Factions',
           ' Factions', 'Prison', ' Prison', 'Survival', ' Survival', ' Minigames', 'Anarchy', 'Hardcore',
-          'Gaming', ' Gaming']
+          'Gaming', ' Gaming', 'Game']
 
 app = Flask(__name__)
 
